@@ -7,23 +7,12 @@ import pandas as pd
 import pickle
 from ml.data import process_data
 from ml.model import train_model, compute_model_metrics, inference
+from score_model import get_general_model_scores
 import logging
 
 # Add the necessary imports for the starter code.
 logging.basicConfig(level=logging.INFO, format="%(asctime)-15s %(message)s")
 logger = logging.getLogger()
-
-
-# Score model
-def get_general_model_scores(model, X_test, y_test, cv):
-    y_pred = inference(model, X_test)
-    precision, recall, fbeta = compute_model_metrics(y_test, y_pred)
-    with open("../model/score_test.txt", "a") as file:
-        file.write(f"{cv}:\n")
-        file.write(f"precision:{precision}\n")
-        file.write(f"recall:{recall}\n")
-        file.write(f"fbeta:{recall}\n")
-    return precision, recall, fbeta
 
 
 # Add code to load in the data.
@@ -34,7 +23,7 @@ columns_new = [col[0] for col in data.columns.str.split()]
 data.columns = columns_new
 
 # Optional enhancement, use K-fold cross validation instead of a train-test split.
-skf = StratifiedKFold(n_splits=10, shuffle=True, random_state=41)
+skf = StratifiedKFold(n_splits=5, shuffle=True, random_state=41)
 
 cat_features = [
     "workclass",
@@ -69,9 +58,19 @@ for train_index, test_index in skf.split(data.drop(columns=["salary"]), data["sa
     # Train and save a model.
     model = train_model(X_train, y_train)
     logger.info("Calculating and logging precision, recall, fbeta.")
-    precision, recall, fbeta = get_general_model_scores(model, X_test, y_test, cv=cv)
+    precision, recall, fbeta = get_general_model_scores(
+        model, X_test, y_test, filename="score_test.txt", cv=cv
+    )
     cv += 1
+
 
 logger.info("Save trained model.")
 with open("../model/trainedmodel.pkl", "wb") as file:
     pickle.dump(model, file)
+
+logger.info("save fitted encoder and binary encoder.")
+with open("../model/enocder.pkl", "wb") as file:
+    pickle.dump(encoder, file)
+
+with open("../model/lb.pkl", "wb") as file:
+    pickle.dump(lb, file)
