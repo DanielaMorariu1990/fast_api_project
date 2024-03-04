@@ -1,8 +1,7 @@
 import os
-from ml.model import (
-    inference,
-    get_general_model_scores,
-)
+from ml.model import inference
+from score_model_slices import get_general_model_scores
+
 from ml.data import process_data
 
 

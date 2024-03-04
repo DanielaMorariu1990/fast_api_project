@@ -28,7 +28,7 @@ def test_post_1():
     assert response.status_code == 200
     print(response.json())
     assert response.json() == {
-        "prediction": "[1]"
+        "prediction": "Income >50k"
     }, f"Returned {response.json()} instead of 0."
 
 
@@ -53,7 +53,7 @@ def test_post_2():
     assert response.status_code == 200
     print(response.json())
     assert response.json() == {
-        "prediction": "[0]"
+        "prediction": "Income <50k"
     }, f"Returned {response.json()} instead of 0."
 
 

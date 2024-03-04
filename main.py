@@ -31,19 +31,19 @@ class DataSource(BaseModel):
 
         schema_extra = {
             "example": {
-                "age": 58,
-                "workclass": " Private",
-                "fnlgt": 151910,
-                "education": " HS-grad",
-                "education-num": 9,
-                "marital-status": " Widowed",
-                "occupation": " Adm-clerical",
-                "relationship": " Unmarried",
+                "age": 50,
+                "workclass": " Self-emp-not-inc",
+                "fnlgt": 83311,
+                "education": " Bachelors",
+                "education-num": 13,
+                "marital-status": " Married-civ-spouse",
+                "occupation": " Exec-managerial",
+                "relationship": " Husband",
                 "race": " White",
-                "sex": " Female",
+                "sex": " Male",
                 "capital-gain": 0,
                 "capital-loss": 0,
-                "hours-per-week": 40,
+                "hours-per-week": 13,
                 "native-country": " United-States",
             }
         }
@@ -135,5 +135,10 @@ async def exercise_function(data: DataSource):
         training=False,
     )
     pred = inference(model, X_test)
-    response_object = {"prediction": json.dumps(pred.tolist())}
+
+    if pred == 0:
+        income_level = "Income <50k"
+    else:
+        income_level = "Income >50k"
+    response_object = {"prediction": str(income_level)}
     return response_object
