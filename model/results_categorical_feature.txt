@@ -82,3 +82,171 @@ For feature: education and value: 12th:
 precision:0.9285714285714286
 recall:0.3939393939393939
 fbeta:0.5531914893617021
+For feature: race and value: White:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: race and value: Black:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: race and value: Asian-Pac-Islander:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: race and value: Amer-Indian-Eskimo:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: race and value: Other:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Bachelors:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: HS-grad:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: 11th:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Masters:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: 9th:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Some-college:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Assoc-acdm:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Assoc-voc:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: 7th-8th:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Doctorate:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Prof-school:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: 5th-6th:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: 10th:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: 1st-4th:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: Preschool:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: education and value: 12th:
+precision:0.0
+recall:1.0
+fbeta:0.0
+For feature: race and value:White:
+precision:0.8127561895392688
+recall:0.6965013348320922
+fbeta:0.7501513317191284
+For feature: race and value:Black:
+precision:0.8275862068965517
+recall:0.6201550387596899
+fbeta:0.7090103397341211
+For feature: race and value:Asian-Pac-Islander:
+precision:0.83984375
+recall:0.7789855072463768
+fbeta:0.8082706766917294
+For feature: race and value:Amer-Indian-Eskimo:
+precision:0.8888888888888888
+recall:0.6666666666666666
+fbeta:0.761904761904762
+For feature: race and value:Other:
+precision:0.9444444444444444
+recall:0.68
+fbeta:0.7906976744186047
+For feature: education and value:Bachelors:
+precision:0.8052905464006939
+recall:0.8361098604232328
+fbeta:0.8204108681245859
+For feature: education and value:HS-grad:
+precision:0.7887323943661971
+recall:0.43462686567164177
+fbeta:0.5604311008468053
+For feature: education and value:11th:
+precision:0.8571428571428571
+recall:0.4
+fbeta:0.5454545454545455
+For feature: education and value:Masters:
+precision:0.8467661691542289
+recall:0.8873826903023984
+fbeta:0.8665987780040733
+For feature: education and value:9th:
+precision:1.0
+recall:0.2222222222222222
+fbeta:0.3636363636363636
+For feature: education and value:Some-college:
+precision:0.7715877437325905
+recall:0.5991348233597693
+fbeta:0.674512987012987
+For feature: education and value:Assoc-acdm:
+precision:0.8024691358024691
+recall:0.7358490566037735
+fbeta:0.7677165354330707
+For feature: education and value:Assoc-voc:
+precision:0.7593220338983051
+recall:0.6204986149584487
+fbeta:0.6829268292682927
+For feature: education and value:7th-8th:
+precision:0.8181818181818182
+recall:0.225
+fbeta:0.35294117647058826
+For feature: education and value:Doctorate:
+precision:0.897196261682243
+recall:0.9411764705882353
+fbeta:0.9186602870813397
+For feature: education and value:Prof-school:
+precision:0.925754060324826
+recall:0.9432624113475178
+fbeta:0.9344262295081968
+For feature: education and value:5th-6th:
+precision:1.0
+recall:0.4375
+fbeta:0.6086956521739131
+For feature: education and value:10th:
+precision:0.9090909090909091
+recall:0.3225806451612903
+fbeta:0.4761904761904761
+For feature: education and value:1st-4th:
+precision:1.0
+recall:0.16666666666666666
+fbeta:0.2857142857142857
+For feature: education and value:Preschool:
+precision:1.0
+recall:1.0
+fbeta:1.0
+For feature: education and value:12th:
+precision:0.9285714285714286
+recall:0.3939393939393939
+fbeta:0.5531914893617021

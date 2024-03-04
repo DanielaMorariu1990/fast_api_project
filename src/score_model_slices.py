@@ -12,7 +12,7 @@ logger = logging.getLogger()
 
 # Add code to load in the data.
 logger.info("Reading in data...")
-data = pd.read_csv(os.path.join(os.getcwd(), "data/census.csv"))
+data = pd.read_csv(os.path.join(os.getcwd(), "data/census.csv"), skipinitialspace=True)
 
 logger.info("Cleaning data...")
 columns_new = [col[0] for col in data.columns.str.split()]
