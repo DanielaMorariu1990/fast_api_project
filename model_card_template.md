@@ -6,7 +6,7 @@ For additional information see the Model Card paper: https://arxiv.org/pdf/1810.
 - This model is created as part of the Udacity Nano Degree MlOps Engineer
 - Created on 04/03/2024
 - Version 1.0
-- I used a Random GRadient Boosting Classifier from scikit-learn in this project
+- I used a Random Gradient Boosting Classifier from scikit-learn in this project
 
 ## Intended Use
 - This project is intended to show an example of deploying a ML Pipeline in Production using FastAPI and Render.
