@@ -21,9 +21,5 @@ response = requests.post(
     "https://fast-api-project-vzj8.onrender.com//predict/", data=json.dumps(data)
 )
 
-# 3.75.158.163
-# 3.125.183.140
-
-
 print(response.status_code)
 print(response.json())
