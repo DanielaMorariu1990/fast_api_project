@@ -18,7 +18,7 @@ data = {
     "native-country": " United-States",
 }
 response = requests.post(
-    "https://fast-api-project-vzj8.onrender.com//predict/", data=json.dumps(data)
+    "https://fast-api-project-vzj8.onrender.com/predict/", data=json.dumps(data)
 )
 
 print(response.status_code)
